@@ -1,0 +1,16 @@
+[package]
+name = "rapier_character_controller"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rapier3d = "*"
+
+[dev-dependencies]
+bevy = { version = "0.6" }
+bevy_kira_audio = { version = "0.8" }
+bevy_asset_loader = { version = "0.9" }
+rand = "0.8"  
+bevy_rapier3d = { version = "0.12", features = [ "simd-stable", "render" ] }
